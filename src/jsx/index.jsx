@@ -1,20 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Letter from './Letter.jsx'
+import Square from './Square.jsx'
 
-class App extends React.Component {
+// class App extends React.Component {
 
 
-  render(){
+//   render(){
     
-    return (
-      <div>działa</div>
-    )
-  }
-}
+//     return (
+//       <div>działa</div>
+//     )
+//   }
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    <App />,
+    <Square black>
+      <Letter />
+    </Square>,
     document.getElementById('app')
   );
 });
